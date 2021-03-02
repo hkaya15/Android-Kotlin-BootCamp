@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/diceText"
+        android:layout_width="214dp"
+        android:layout_height="143dp"
+        android:gravity="center"
+        android:text="Merhaba Android"
+        android:textColor="#F10606"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/diceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="72dp"
+        android:gravity="center"
+        android:text="Değiştir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diceText" />
+
+    <ImageView
+        android:id="@+id/diceImage"
+        android:layout_width="195dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dice1" />
+
+    <EditText
+        android:id="@+id/sendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:hint="Data:"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/diceText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="74dp"
+        android:text="Gönder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/diceButton"
+        app:layout_constraintTop_toBottomOf="@+id/diceText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
