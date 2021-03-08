@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/navigationHomeFragment">
+
+    <fragment
+        android:id="@+id/navigationHomeFragment"
+        android:name="com.example.bootcamp.NavigationHomeFragment"
+        android:label="fragment_navigation_home"
+        tools:layout="@layout/fragment_navigation_home" >
+        <action
+            android:id="@+id/action_navigationHomeFragment_to_navigationDetailFragment"
+            app:destination="@id/navigationDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationDetailFragment"
+        android:name="com.example.bootcamp.NavigationDetailFragment"
+        android:label="fragment_navigation_detail"
+        tools:layout="@layout/fragment_navigation_detail" >
+        <argument
+            android:name="puppyName"
+            app:argType="string" />
+    </fragment>
+</navigation>
